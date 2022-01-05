@@ -162,17 +162,19 @@ the first and the second elements are the labels</p>
 <dd><p>Generalized method to return all data from standard output given from any pm current.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>data</strong> – The cleaned output from sending SSH commands. Normally the output is</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>np.ndarray</em><em>, </em><em>Required</em>) – The cleaned output from sending SSH commands. Normally the output is cleaned through clean_out before sending it here.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>Required</em>) – The string representation of the interface</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required</em>) – Client object from client</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A single row table with every data point labeled as [interval]-[pm-name] = [curr-value]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
-<p>cleaned through clean_out before sending it here.
-:type data: np.ndarray, Required
-:param name: The string representation of the interface
-:type name: str, Required
-:param client: Client object from client
-:type client: Client, Required
-:return: A single row table with every data point is labeled [interval]-[pm-name] = [curr-value]
-:rtype: pd.DataFrame</p>
 </dd></dl>
 
 <dl class="py function">
@@ -187,13 +189,12 @@ the first and the second elements are the labels</p>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Tuple of 3 dicts, each dict represents live, minute, and daily data respectively.</p>
+<dd class="field-even"><p>Tuple of 3 dicts, each dict represents live, minute, and daily data respectively. Access the information in them with [‘label’] for all the labeling information. Other information: [‘receivingLow’, ‘receivingMean’, ‘receivingHigh’] [‘transmittingLow’, ‘transmittingMean’, ‘transmittingHigh’]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple[dict, dict, dict] or None</p>
 </dd>
 </dl>
-<p>Access the information in them with [‘label’] for all the labeling information.
-Other information:
-[‘receivingLow’, ‘receivingMean’, ‘receivingHigh’]
-[‘transmittingLow’, ‘transmittingMean’, ‘transmittingHigh’]</p>
 </dd></dl>
 
 <dl class="py function">
