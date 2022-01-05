@@ -1,0 +1,7 @@
+time\_optimization module
+=========================
+
+.. automodule:: time_optimization
+   :members:
+   :undoc-members:
+   :show-inheritance:

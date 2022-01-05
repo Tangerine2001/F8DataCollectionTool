@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>time_optimization module &mdash; F8 Support Tool  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="tableView module" href="tableView.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> F8 Support Tool
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Project1</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Canvas.html">Canvas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CardPushButton.html">CardPushButton module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MainWindow.html">MainWindow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptionsPushButton.html">OptionsPushButton module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helper.html">helper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sshTest.html">sshTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tableView.html">tableView module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">time_optimization module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">F8 Support Tool</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">Project1</a> &raquo;</li>
+      <li>time_optimization module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/time_optimization.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-time_optimization">
+<span id="time-optimization-module"></span><h1>time_optimization module<a class="headerlink" href="#module-time_optimization" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="time_optimization.close_enough">
+<span class="sig-prename descclassname"><span class="pre">time_optimization.</span></span><span class="sig-name descname"><span class="pre">close_enough</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#time_optimization.close_enough" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if two outputs are “close enough” (99% of the characters are the same).
+This is to account for the slight difference when sending the same command but
+has milliseconds worth of difference in the output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>out1</strong> (<em>bytes</em><em>, </em><em>Required</em>) – First output. Order does not matter.</p></li>
+<li><p><strong>out2</strong> (<em>bytes</em><em>, </em><em>Required</em>) – Second output. Order does not matter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Truth value of two outputs being “close enough”</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="time_optimization.optimize">
+<span class="sig-prename descclassname"><span class="pre">time_optimization.</span></span><span class="sig-name descname"><span class="pre">optimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#time_optimization.optimize" title="Permalink to this definition"></a></dt>
+<dd><p>Optimizes the time it takes to send a command to the console through a
+grid search technique employed on sleep_time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="time_optimization.run_command">
+<span class="sig-prename descclassname"><span class="pre">time_optimization.</span></span><span class="sig-name descname"><span class="pre">run_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">span</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes_to_read</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wanted</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#time_optimization.run_command" title="Permalink to this definition"></a></dt>
+<dd><p>Sends a command through a Client object iteratively. Stops at the first sleep_time
+where 99% of the iterations return the desired output with 99% accuracy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required</em>) – Client object from client</p></li>
+<li><p><strong>cmd</strong> (<em>str</em><em>, </em><em>Required</em>) – The command to send to the Client</p></li>
+<li><p><strong>span</strong> – The span of sleep times to test. Formatted as (start, stop inclusive, number of steps). Ex.</p></li>
+</ul>
+</dd>
+</dl>
+<p>(0.1, 1.0, 10) would test sleep times on the interval [0.1, 0.2, 0.3,…, 1.0]
+:type span: tuple, Required
+:param bytes_to_read: The amount of expected bytes needed to read the output.
+:type bytes_to_read: int, Required
+:param wanted: The expected output of the command.
+:type wanted: bytes, Required.
+:param iterations: The number of times to run the command at each sleep time.
+:type iterations: int, Optional. Default is 1000.
+:return: None.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="time_optimization.try_time">
+<span class="sig-prename descclassname"><span class="pre">time_optimization.</span></span><span class="sig-name descname"><span class="pre">try_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cmd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes_to_read</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wanted</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#time_optimization.try_time" title="Permalink to this definition"></a></dt>
+<dd><p>Tries to run the command for a specified number of iterations and uses a specified
+sleep_time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cmd</strong> (<em>str</em><em>, </em><em>Required</em>) – The command to send to the Client object</p></li>
+<li><p><strong>sleep</strong> (<em>float</em><em>, </em><em>Required</em>) – The sleep time for the Client object to wait for a response</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required</em>) – Client object from client</p></li>
+<li><p><strong>iterations</strong> (<em>int</em><em>, </em><em>Required</em>) – Number of iterations</p></li>
+<li><p><strong>bytes_to_read</strong> (<em>int</em><em>, </em><em>Required</em>) – The expected number of bytes to read from the output.</p></li>
+<li><p><strong>wanted</strong> (<em>bytes</em><em>, </em><em>Required</em>) – The expected output from the command.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The number of outputs from the client that follow the criteria of</p>
+</dd>
+</dl>
+<p>close_enough.
+:rtype: int</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tableView.html" class="btn btn-neutral float-left" title="tableView module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Max Tang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

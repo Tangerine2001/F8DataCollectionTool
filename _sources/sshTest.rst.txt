@@ -1,0 +1,7 @@
+sshTest module
+==============
+
+.. automodule:: sshTest
+   :members:
+   :undoc-members:
+   :show-inheritance:

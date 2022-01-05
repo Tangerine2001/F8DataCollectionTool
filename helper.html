@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>helper module &mdash; F8 Support Tool  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sshTest module" href="sshTest.html" />
+    <link rel="prev" title="client module" href="client.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> F8 Support Tool
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Project1</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Canvas.html">Canvas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CardPushButton.html">CardPushButton module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MainWindow.html">MainWindow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptionsPushButton.html">OptionsPushButton module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">helper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sshTest.html">sshTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tableView.html">tableView module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time_optimization.html">time_optimization module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">F8 Support Tool</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">Project1</a> &raquo;</li>
+      <li>helper module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/helper.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-helper">
+<span id="helper-module"></span><h1>helper module<a class="headerlink" href="#module-helper" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.clean_out">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">clean_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#helper.clean_out" title="Permalink to this definition"></a></dt>
+<dd><p>Default process for cleaning the output and storing it
+into a numpy array. Every row of output is an entry in
+the output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>out</strong> (<em>bytes</em><em>, </em><em>Required</em>) – The output from shell client.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>data: Numpy array where each element corresponds to a row of output.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.clean_tab_elements">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">clean_tab_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clean_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sr1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sr2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#helper.clean_tab_elements" title="Permalink to this definition"></a></dt>
+<dd><p>Takes output from clean_out and reorganizes it into a dict.
+Used primarily only for tab completion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>clean_data</strong> (<em>np.ndarray</em><em>, </em><em>Required</em>) – Output from clean_out.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>element: Dict that stores the tab completion suggestions as key, value pairs where key is the keyword and the value is the description if one is found.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.data_parser">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">data_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_to_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#helper.data_parser" title="Permalink to this definition"></a></dt>
+<dd><p>Takes a flat numpy data of data and turns it into a DataFrame. Assume that
+the first and the second elements are the labels</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>np.ndarray</em><em>, </em><em>Required</em>) – The data, normally coming from grabData.</p></li>
+<li><p><strong>output_name</strong> (<em>str</em><em>, </em><em>Optional. Default is None</em>) – The name of the data, used in writing to the file.</p></li>
+<li><p><strong>write_to_output</strong> (<em>bool</em><em>, </em><em>Options. Default is None</em>) – True if the output should be put into a .csv</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>clean_df: A DataFrame with the labels as the headers and data points as data</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.get_last">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">get_last</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#helper.get_last" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the ending from an interface. (The set of characters after “/”)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>interface</strong> (<em>str. Required.</em>) – The string representation of an interface.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The ending of the interface.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.get_values_from_current">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">get_values_from_current</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#helper.get_values_from_current" title="Permalink to this definition"></a></dt>
+<dd><p>Generalized method to return all data from standard output given from any pm current.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – The cleaned output from sending SSH commands. Normally the output is</p>
+</dd>
+</dl>
+<p>cleaned through clean_out before sending it here.
+:type data: np.ndarray, Required
+:param name: The string representation of the interface
+:type name: str, Required
+:param client: Client object from client
+:type client: Client, Required
+:return: A single row table with every data point is labeled [interval]-[pm-name] = [curr-value]
+:rtype: pd.DataFrame</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.grab_current_data">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">grab_current_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">card</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#helper.grab_current_data" title="Permalink to this definition"></a></dt>
+<dd><p>Grabs the current data from the passed in card.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – Client object from client</p></li>
+<li><p><strong>card</strong> – The card to read history from</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuple of 3 dicts, each dict represents live, minute, and daily data respectively.</p>
+</dd>
+</dl>
+<p>Access the information in them with [‘label’] for all the labeling information.
+Other information:
+[‘receivingLow’, ‘receivingMean’, ‘receivingHigh’]
+[‘transmittingLow’, ‘transmittingMean’, ‘transmittingHigh’]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.grab_data">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">grab_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_to_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#helper.grab_data" title="Permalink to this definition"></a></dt>
+<dd><p>Grabs data from a given command. This is a high-level function. Use sendCMD
+to send commands manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required</em>) – Client object from client</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>Required</em>) – The name of the data, also the determinant for what command to run</p></li>
+<li><p><strong>write_to_file</strong> (<em>bool</em><em>, </em><em>Optional. Default is False</em>) – Optional. True if the data should be saved to a .csv.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>data: DataFrame containing all the data retrieved from the command in a table.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.is_ot">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">is_ot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#helper.is_ot" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the interface parameters is an ot (followed by some number)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>interface</strong> (<em>str. Required.</em>) – The string representation of an interface.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Truth value of the interface have an ot ending</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="helper.plot_current">
+<span class="sig-prename descclassname"><span class="pre">helper.</span></span><span class="sig-name descname"><span class="pre">plot_current</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">card</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_plots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#helper.plot_current" title="Permalink to this definition"></a></dt>
+<dd><p>Plots the current values for each card</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>card</strong> (<em>str</em><em>, </em><em>Required</em>) – Specific cards to plot the history for</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required</em>) – Client object from client</p></li>
+<li><p><strong>show_plots</strong> (<em>bool</em><em>, </em><em>Optional. Default is False</em>) – Toggle whether to show plots or now</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>figures: List of the figures used and their card names.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list[tuple]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="client.html" class="btn btn-neutral float-left" title="client module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sshTest.html" class="btn btn-neutral float-right" title="sshTest module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Max Tang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

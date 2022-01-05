@@ -1,0 +1,7 @@
+OptionsPushButton module
+========================
+
+.. automodule:: OptionsPushButton
+   :members:
+   :undoc-members:
+   :show-inheritance:
