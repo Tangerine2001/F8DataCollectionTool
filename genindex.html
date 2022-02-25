@@ -1,98 +1,178 @@
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; F8 Support Tool  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Index</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
-</head>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> F8 Support Tool
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">Project1</a></li>
-</ul>
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="#" />
+  <link rel="search" title="Search" href="search.html" /> 
+  </head>
 
-        </div>
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">F8 Data Collection Tool</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
       </div>
-    </nav>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">F8 Support Tool</a>
-      </nav>
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Index</li>
-      <li class="wy-breadcrumbs-aside">
-      </li>
-  </ul>
-  <hr/>
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="modules.html#project1">project1</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="F8v1.html" class="reference internal ">F8v1 module</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="check_combo.html" class="reference internal ">check_combo module</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="client.html" class="reference internal ">client module</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="helper.html" class="reference internal ">helper module</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="tableView.html" class="reference internal ">tableView module</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Index</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
 
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
  <a href="#A"><strong>A</strong></a>
- | <a href="#B"><strong>B</strong></a>
  | <a href="#C"><strong>C</strong></a>
  | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
- | <a href="#O"><strong>O</strong></a>
+ | <a href="#N"><strong>N</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.add_to_cmd">add_to_cmd() (MainWindow.MainWindow method)</a>
+      <li><a href="F8v1.html#F8v1.abs_value">abs_value() (in module F8v1)</a>
 </li>
   </ul></td>
-</tr></table>
-
-<h2 id="B">B</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.back">back() (MainWindow.MainWindow method)</a>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox.all_selected">all_selected() (check_combo.CheckableComboBox method)</a>
+</li>
+      <li><a href="helper.html#helper.asctime_to_datetime">asctime_to_datetime() (in module helper)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -100,28 +180,19 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    Canvas
-
-      <ul>
-        <li><a href="Canvas.html#module-Canvas">module</a>
+      <li><a href="F8v1.html#F8v1.Worker.change_status">change_status() (F8v1.Worker method)</a>
 </li>
-      </ul></li>
-      <li><a href="Canvas.html#Canvas.Canvas">Canvas (class in Canvas)</a>
+      <li><a href="F8v1.html#F8v1.Worker.change_text">change_text (F8v1.Worker attribute)</a>
 </li>
       <li>
-    CardPushButton
+    check_combo
 
       <ul>
-        <li><a href="CardPushButton.html#module-CardPushButton">module</a>
+        <li><a href="check_combo.html#module-check_combo">module</a>
 </li>
       </ul></li>
-      <li><a href="CardPushButton.html#CardPushButton.CardPushButton">CardPushButton (class in CardPushButton)</a>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox">CheckableComboBox (class in check_combo)</a>
 </li>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.change_output">change_output() (MainWindow.MainWindow method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="helper.html#helper.clean_out">clean_out() (in module helper)</a>
 </li>
       <li><a href="helper.html#helper.clean_tab_elements">clean_tab_elements() (in module helper)</a>
@@ -133,11 +204,21 @@
         <li><a href="client.html#module-client">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="client.html#client.Client">Client (class in client)</a>
 </li>
-      <li><a href="time_optimization.html#time_optimization.close_enough">close_enough() (in module time_optimization)</a>
+      <li><a href="F8v1.html#F8v1.MainWindow.close_everything">close_everything() (F8v1.MainWindow method)</a>
 </li>
       <li><a href="tableView.html#tableView.PandasTable.columnCount">columnCount() (tableView.PandasTable method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.connect_to_client">connect_to_client() (F8v1.MainWindow method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.create_check">create_check() (in module F8v1)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.create_param">create_param() (in module F8v1)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.create_window_frame">create_window_frame() (F8v1.MainWindow method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -147,13 +228,38 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="tableView.html#tableView.PandasTable.data">data() (tableView.PandasTable method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="helper.html#helper.data_parser">data_parser() (in module helper)</a>
 </li>
   </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.determine_output">determine_output() (MainWindow.MainWindow method)</a>
+      <li><a href="F8v1.html#F8v1.Worker.end_gui">end_gui() (F8v1.Worker method)</a>
 </li>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.determine_sleep_read">determine_sleep_read() (MainWindow.MainWindow method)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.Worker.end_program">end_program (F8v1.Worker attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    F8v1
+
+      <ul>
+        <li><a href="F8v1.html#module-F8v1">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.MainWindow.finish_content">finish_content() (F8v1.MainWindow method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -161,31 +267,29 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.generate_tab_buttons">generate_tab_buttons() (MainWindow.MainWindow method)</a>
+      <li><a href="helper.html#helper.generate_host_ips">generate_host_ips() (in module helper)</a>
 </li>
-      <li><a href="OptionsPushButton.html#OptionsPushButton.OptionsPushButton.get_cmd">get_cmd() (OptionsPushButton.OptionsPushButton method)</a>
+      <li><a href="F8v1.html#F8v1.MainWindow.get_current">get_current() (F8v1.MainWindow method)</a>
 </li>
-      <li><a href="OptionsPushButton.html#OptionsPushButton.OptionsPushButton.get_desc">get_desc() (OptionsPushButton.OptionsPushButton method)</a>
+      <li><a href="F8v1.html#F8v1.MainWindow.get_history">get_history() (F8v1.MainWindow method)</a>
+</li>
+      <li><a href="client.html#client.Client.get_host">get_host() (client.Client method)</a>
 </li>
       <li><a href="helper.html#helper.get_last">get_last() (in module helper)</a>
-
-      <ul>
-        <li><a href="sshTest.html#sshTest.get_last">(in module sshTest)</a>
 </li>
-      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.get_last_cmd">get_last_cmd() (MainWindow.MainWindow method)</a>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox.get_selected_values">get_selected_values() (check_combo.CheckableComboBox method)</a>
 </li>
       <li><a href="helper.html#helper.get_values_from_current">get_values_from_current() (in module helper)</a>
 </li>
-      <li><a href="helper.html#helper.grab_current_data">grab_current_data() (in module helper)</a>
-
-      <ul>
-        <li><a href="MainWindow.html#MainWindow.MainWindow.grab_current_data">(MainWindow.MainWindow method)</a>
+      <li><a href="helper.html#helper.get_values_from_history">get_values_from_history() (in module helper)</a>
 </li>
-      </ul></li>
       <li><a href="helper.html#helper.grab_data">grab_data() (in module helper)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.graph_history">graph_history() (F8v1.MainWindow method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.graph_options">graph_options() (F8v1.MainWindow method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -193,7 +297,7 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="sshTest.html#sshTest.has_opt_phy">has_opt_phy() (in module sshTest)</a>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox.handle_item_pressed">handle_item_pressed() (check_combo.CheckableComboBox method)</a>
 </li>
       <li><a href="tableView.html#tableView.PandasTable.headerData">headerData() (tableView.PandasTable method)</a>
 </li>
@@ -206,13 +310,39 @@
         <li><a href="helper.html#module-helper">module</a>
 </li>
       </ul></li>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox.hidePopup">hidePopup() (check_combo.CheckableComboBox method)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="helper.html#helper.ip_to_number">ip_to_number() (in module helper)</a>
+</li>
       <li><a href="helper.html#helper.is_ot">is_ot() (in module helper)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="helper.html#helper.is_otu">is_otu() (in module helper)</a>
+</li>
+      <li><a href="client.html#client.is_valid_ip">is_valid_ip() (in module client)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.MainWindow.keyPressEvent">keyPressEvent() (F8v1.MainWindow method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.MainWindow.log_info">log_info() (F8v1.MainWindow method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -220,58 +350,42 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="sshTest.html#sshTest.main">main() (in module sshTest)</a>
+      <li><a href="F8v1.html#F8v1.MainWindow">MainWindow (class in F8v1)</a>
 </li>
-      <li>
-    MainWindow
-
-      <ul>
-        <li><a href="MainWindow.html#module-MainWindow">module</a>
-</li>
-      </ul></li>
-      <li><a href="MainWindow.html#MainWindow.MainWindow">MainWindow (class in MainWindow)</a>
+      <li><a href="F8v1.html#F8v1.MainWindow.maximize_normal">maximize_normal() (F8v1.MainWindow method)</a>
 </li>
       <li>
     module
 
       <ul>
-        <li><a href="Canvas.html#module-Canvas">Canvas</a>
-</li>
-        <li><a href="CardPushButton.html#module-CardPushButton">CardPushButton</a>
+        <li><a href="check_combo.html#module-check_combo">check_combo</a>
 </li>
         <li><a href="client.html#module-client">client</a>
 </li>
+        <li><a href="F8v1.html#module-F8v1">F8v1</a>
+</li>
         <li><a href="helper.html#module-helper">helper</a>
-</li>
-        <li><a href="MainWindow.html#module-MainWindow">MainWindow</a>
-</li>
-        <li><a href="OptionsPushButton.html#module-OptionsPushButton">OptionsPushButton</a>
-</li>
-        <li><a href="sshTest.html#module-sshTest">sshTest</a>
 </li>
         <li><a href="tableView.html#module-tableView">tableView</a>
 </li>
-        <li><a href="time_optimization.html#module-time_optimization">time_optimization</a>
-</li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.MainWindow.mouseMoveEvent">mouseMoveEvent() (F8v1.MainWindow method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.mousePressEvent">mousePressEvent() (F8v1.MainWindow method)</a>
+</li>
   </ul></td>
 </tr></table>
 
-<h2 id="O">O</h2>
+<h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="time_optimization.html#time_optimization.optimize">optimize() (in module time_optimization)</a>
+      <li><a href="helper.html#helper.number_to_float">number_to_float() (in module helper)</a>
 </li>
-      <li>
-    OptionsPushButton
-
-      <ul>
-        <li><a href="OptionsPushButton.html#module-OptionsPushButton">module</a>
-</li>
-      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="OptionsPushButton.html#OptionsPushButton.OptionsPushButton">OptionsPushButton (class in OptionsPushButton)</a>
+      <li><a href="helper.html#helper.number_to_ip">number_to_ip() (in module helper)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -283,25 +397,21 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="helper.html#helper.plot_current">plot_current() (in module helper)</a>
-
-      <ul>
-        <li><a href="MainWindow.html#MainWindow.MainWindow.plot_current">(MainWindow.MainWindow method)</a>
+      <li><a href="helper.html#helper.path_to_pm">path_to_pm() (in module helper)</a>
 </li>
-      </ul></li>
+      <li><a href="F8v1.html#F8v1.MainWindow.populate_data">populate_data() (F8v1.MainWindow method)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="MainWindow.html#MainWindow.MainWindow.reset_tab_buttons">reset_tab_buttons() (MainWindow.MainWindow method)</a>
+      <li><a href="F8v1.html#F8v1.resource_path">resource_path() (in module F8v1)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="tableView.html#tableView.PandasTable.rowCount">rowCount() (tableView.PandasTable method)</a>
-</li>
-      <li><a href="time_optimization.html#time_optimization.run_command">run_command() (in module time_optimization)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -311,15 +421,24 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="client.html#client.Client.send_cmd">send_cmd() (client.Client method)</a>
 </li>
+      <li><a href="check_combo.html#check_combo.CheckableComboBox.set_item_checked">set_item_checked() (check_combo.CheckableComboBox method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.set_status">set_status() (F8v1.MainWindow method)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.setParamsEnabled">setParamsEnabled() (F8v1.MainWindow method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    sshTest
+      <li><a href="F8v1.html#F8v1.MainWindow.show_gui">show_gui() (F8v1.MainWindow method)</a>
 
       <ul>
-        <li><a href="sshTest.html#module-sshTest">module</a>
+        <li><a href="F8v1.html#F8v1.Worker.show_gui">(F8v1.Worker method)</a>
 </li>
       </ul></li>
+      <li><a href="F8v1.html#F8v1.Worker.show_table">show_table (F8v1.Worker attribute)</a>
+</li>
+      <li><a href="F8v1.html#F8v1.MainWindow.start_up">start_up() (F8v1.MainWindow method)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -335,45 +454,34 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    time_optimization
-
-      <ul>
-        <li><a href="time_optimization.html#module-time_optimization">module</a>
+      <li><a href="F8v1.html#F8v1.MainWindow.thread_helper">thread_helper() (F8v1.MainWindow method)</a>
 </li>
-      </ul></li>
-      <li><a href="time_optimization.html#time_optimization.try_time">try_time() (in module time_optimization)</a>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="F8v1.html#F8v1.Worker">Worker (class in F8v1)</a>
 </li>
   </ul></td>
 </tr></table>
 
 
 
-           </div>
           </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Max Tang.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
-
-</body>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, Max Tang.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
 </html>

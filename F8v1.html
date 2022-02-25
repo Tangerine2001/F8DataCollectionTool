@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+      <title>F8v1 module</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">F8 Data Collection Tool</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#welcome-to-f8v1-s-documentation">Contents:</a></span>
+      </p>
+      <ul class="">
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>F8v1 module</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="module-F8v1">
+<span id="f8v1-module"></span><h1>F8v1 module<a class="headerlink" href="#module-F8v1" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="F8v1.MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">MainWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QMainWindow</span></code></p>
+<p>Main GUI Window.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.close_everything">
+<span class="sig-name descname"><span class="pre">close_everything</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.close_everything" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discontinues all threads.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.connect_to_client">
+<span class="sig-name descname"><span class="pre">connect_to_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.connect_to_client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to the client based on the passed in parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>params</strong> (<em>tuple</em>) – The input from parameters.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.create_window_frame">
+<span class="sig-name descname"><span class="pre">create_window_frame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PyQt5.QtWidgets.QHBoxLayout</span></span></span><a class="headerlink" href="#F8v1.MainWindow.create_window_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the frame for the window and puts it into an HBox.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Qt layout containing the buttons</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>QHBoxLayout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.finish_content">
+<span class="sig-name descname"><span class="pre">finish_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.finish_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.get_current">
+<span class="sig-name descname"><span class="pre">get_current</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interfaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#F8v1.MainWindow.get_current" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current data based on the passed in interfaces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>interfaces</strong> (<em>List</em><em>, </em><em>Required.</em>) – List containing tuples of (interface, current_cmd) where current_cmd is the specific cmd. to access the current</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required.</em>) – Client object from client.</p></li>
+<li><p><strong>sleep_time</strong> (<em>float</em><em>, </em><em>Required.</em>) – Estimated sleep_time for the command.</p></li>
+<li><p><strong>df</strong> (<em>pd.DataFrame</em><em>, </em><em>Required.</em>) – The DataFrame to add current data to.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>successful interfaces, outer pd.DataFrame</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple[list[tuple[str, str]], pd.DataFrame]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.get_history">
+<span class="sig-name descname"><span class="pre">get_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface_out</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bytes</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface_cmd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.get_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the history for every specified interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>interface_out</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>]</em><em>]</em><em>, </em><em>Required.</em>) – List of interfaces and their respective outs from history.</p></li>
+<li><p><strong>interface_cmd</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em><em>]</em><em>, </em><em>Required.</em>) – List of interfaces and their respective commands for history.</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a><em>, </em><em>Required.</em>) – Client object from client.</p></li>
+<li><p><strong>sleep_time</strong> (<em>float</em><em>, </em><em>Required.</em>) – Amount of time the program should sleep for the command</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.graph_history">
+<span class="sig-name descname"><span class="pre">graph_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normal_successful</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ot_successful</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu_successful</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.Client" title="client.Client"><span class="pre">client.Client</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.graph_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Graphs the history and saves the graphs to .png files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>normal_successful</strong> (<em>list</em><em>, </em><em>Required.</em>) – The interfaces that passed the acceptable_endings requirement.</p></li>
+<li><p><strong>ot_successful</strong> (<em>list</em><em>, </em><em>Required.</em>) – The interfaces that passed the is_ot requirement.</p></li>
+<li><p><strong>otu_successful</strong> (<em>list</em><em>, </em><em>Required.</em>) – The interfaces that passed the is_otu requirement.</p></li>
+<li><p><strong>client</strong> (<a class="reference internal" href="client.html#client.Client" title="client.Client"><em>Client</em></a>) – Client object.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.graph_options">
+<span class="sig-name descname"><span class="pre">graph_options</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.graph_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.keyPressEvent">
+<span class="sig-name descname"><span class="pre">keyPressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PyQt5.QtGui.QKeyEvent</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#F8v1.MainWindow.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is called whenever a key is pressed and the window is the selected element on the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>key</strong> (<em>QKeyEvent</em><em>, </em><em>Required.</em>) – The key that was pressed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.log_info">
+<span class="sig-name descname"><span class="pre">log_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.log_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs information to the console. Used for threading.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>message</strong> (<em>str</em><em>, </em><em>Required.</em>) – Message to print to the console</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.maximize_normal">
+<span class="sig-name descname"><span class="pre">maximize_normal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.maximize_normal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adjusts the screen to be maximized or normalized.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.mouseMoveEvent">
+<span class="sig-name descname"><span class="pre">mouseMoveEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PyQt5.QtGui.QMouseEvent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called every time the mouse is clicked and moving across the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QMouseEvent.</em>) – The click event.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.mousePressEvent">
+<span class="sig-name descname"><span class="pre">mousePressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PyQt5.QtGui.QMouseEvent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called every time the mouse in clicked on the window.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QMouseEvent.</em>) – The click event.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.populate_data">
+<span class="sig-name descname"><span class="pre">populate_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_to_csv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_gui</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph_history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.populate_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pull data and populate a DataFrame with it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>save_to_csv</strong> (<em>bool</em><em>, </em><em>Optional. Default is False.</em>) – Truth value of user wanting to save the DataFrame to a csv.</p></li>
+<li><p><strong>show_gui</strong> (<em>bool</em><em>, </em><em>Optional. Default is False.</em>) – Truth value of user wanting to see the DataFrame displayed on the GUI.</p></li>
+<li><p><strong>graph_history</strong> (<em>bool</em><em>, </em><em>Optional. Default is False.</em>) – Truth value of user wanting to graph history.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.setParamsEnabled">
+<span class="sig-name descname"><span class="pre">setParamsEnabled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.setParamsEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets all parameters to be enabled based on input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>bool</em><em>, </em><em>Optional. Default is True.</em>) – Boolean value to enable/disable all parameters</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.set_status">
+<span class="sig-name descname"><span class="pre">set_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.set_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.show_gui">
+<span class="sig-name descname"><span class="pre">show_gui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.show_gui" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.start_up">
+<span class="sig-name descname"><span class="pre">start_up</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.start_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the starting parameters and checkboxes. Creates layout and content and shows the starting page.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.thread_helper">
+<span class="sig-name descname"><span class="pre">thread_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.thread_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intermediary method that attempts a connection to the client and called populate_data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>params</strong> (<em>tuple</em>) – All the parameters from the GUI</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="F8v1.Worker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">Worker</span></span><a class="headerlink" href="#F8v1.Worker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.Worker.change_status">
+<span class="sig-name descname"><span class="pre">change_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.Worker.change_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="F8v1.Worker.change_text">
+<span class="sig-name descname"><span class="pre">change_text</span></span><a class="headerlink" href="#F8v1.Worker.change_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.Worker.end_gui">
+<span class="sig-name descname"><span class="pre">end_gui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useless</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.Worker.end_gui" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="F8v1.Worker.end_program">
+<span class="sig-name descname"><span class="pre">end_program</span></span><a class="headerlink" href="#F8v1.Worker.end_program" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.Worker.show_gui">
+<span class="sig-name descname"><span class="pre">show_gui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.Worker.show_gui" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="F8v1.Worker.show_table">
+<span class="sig-name descname"><span class="pre">show_table</span></span><a class="headerlink" href="#F8v1.Worker.show_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.abs_value">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">abs_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PyQt5.QtCore.QPoint</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PyQt5.QtCore.QPoint</span></span></span><a class="headerlink" href="#F8v1.abs_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the absolute value of both of the coordinates for a QPoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>point</strong> (<em>QPoint</em><em>, </em><em>Required.</em>) – The QPoint.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>QPoint with positive x and y values.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.create_check">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">create_check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QWidget</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#F8v1.create_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a QCheckBox that a user can specify for wanting specific information. All the checkboxes should be optional.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> (<em>str</em><em>, </em><em>Required.</em>) – The label for the QCheckBox.</p></li>
+<li><p><strong>checked</strong> (<em>bool</em><em>, </em><em>Optional. Default is True.</em>) – Truth value of whether the box is already checked.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The QWidget that wraps the QCheckBox.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple[QWidget, QCheckBox]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.create_param">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">create_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QWidget</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#F8v1.create_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a parameter and returns necessary objects. A parameter consists of a QLineEdit and a QLabel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> (<em>str</em><em>, </em><em>Required.</em>) – The text the label displays to hint at what parameter it’s asking for.</p></li>
+<li><p><strong>default_text</strong> (<em>str</em><em>, </em><em>Optional. Default is ''.</em>) – The default text of the QLineEdit</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>widget, text: The QWidget that wraps the QLineEdit and QLabel.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple[QWidget, QLineEdit]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.resource_path">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">resource_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relative_path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#F8v1.resource_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the path for a file in terms of _MEIPASS so that pyinstaller can properly convert into a .exe.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>relative_path</strong> (<em>Any</em>) – The path as you would normally input it in Python.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Absolute path in terms of _MEIPASS</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bytes or str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, Max Tang.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
