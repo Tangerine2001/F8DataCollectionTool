@@ -1,0 +1,7 @@
+check\_combo module
+===================
+
+.. automodule:: check_combo
+   :members:
+   :undoc-members:
+   :show-inheritance:
