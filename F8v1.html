@@ -307,7 +307,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="F8v1.MainWindow.thread_helper">
-<span class="sig-name descname"><span class="pre">thread_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.thread_helper" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">thread_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QLineEdit</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PyQt5.QtWidgets.QCheckBox</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.thread_helper" title="Permalink to this definition"></a></dt>
 <dd><p>Intermediary method that attempts a connection to the client and called populate_data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -318,6 +318,11 @@
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="F8v1.MainWindow.wake_up_nodes">
+<span class="sig-name descname"><span class="pre">wake_up_nodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.MainWindow.wake_up_nodes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -415,6 +420,30 @@
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="F8v1.except_hook">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">except_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exception</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traceback</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.except_hook" title="Permalink to this definition"></a></dt>
+<dd><p>Any exceptions are caught and printed to console</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.move_column">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">move_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.move_column" title="Permalink to this definition"></a></dt>
+<dd><p>Move a specific column to a specific index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame.</em>) – The DataFrame to perform this action on.</p></li>
+<li><p><strong>column</strong> (<em>str</em>) – The name of the column in df, must exist.</p></li>
+<li><p><strong>index</strong> (<em>int</em>) – The column index to move the column to, must be a valid index.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="F8v1.resource_path">
 <span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">resource_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relative_path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#F8v1.resource_path" title="Permalink to this definition"></a></dt>
 <dd><p>Gets the path for a file in terms of _MEIPASS so that pyinstaller can properly convert into a .exe.</p>
@@ -429,6 +458,12 @@
 <dd class="field-odd"><p>bytes or str</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="F8v1.run_application">
+<span class="sig-prename descclassname"><span class="pre">F8v1.</span></span><span class="sig-name descname"><span class="pre">run_application</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#F8v1.run_application" title="Permalink to this definition"></a></dt>
+<dd><p>Starts up the main window.</p>
 </dd></dl>
 
 </section>
